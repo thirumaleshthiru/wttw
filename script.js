@@ -25,15 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', onSubmit);
 });
 
-
+let adminLogin = document.querySelector("#adminLogin");
+adminLogin.onclick = function() {
+    window.location.href = './login.html';
+}
 let submitbtn = document.querySelector("#dashboard-submit");
 submitbtn.onclick = function(){
     window.location.href = './student.html'
 }
 
-let adminLogin = document.querySelector("#adminLogin")
-
-adminLogin.onclick = function(){
-    window.location.href = './login.html'
-}
-
+ 
